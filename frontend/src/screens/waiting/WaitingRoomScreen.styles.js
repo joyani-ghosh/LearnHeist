@@ -1,0 +1,185 @@
+import { StyleSheet } from 'react-native';
+import { COLORS, SPACING, FONT_SIZE, BORDER_RADIUS } from '../../constants';
+
+export default StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+    paddingHorizontal: SPACING.md,
+  },
+  header: {
+    paddingTop: SPACING.xxl + 10,
+    paddingBottom: SPACING.md,
+    alignItems: 'center',
+  },
+  headerTitle: {
+    fontSize: FONT_SIZE.xl,
+    fontWeight: 'bold',
+    color: COLORS.text,
+  },
+  headerSubtitle: {
+    fontSize: FONT_SIZE.sm,
+    color: COLORS.textSecondary,
+    marginTop: 4,
+  },
+  codeContainer: {
+    backgroundColor: COLORS.surface,
+    borderRadius: BORDER_RADIUS.lg,
+    padding: SPACING.lg,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: COLORS.primary,
+    marginVertical: SPACING.lg,
+  },
+  codeLabel: {
+    fontSize: FONT_SIZE.sm,
+    color: COLORS.textSecondary,
+    marginBottom: SPACING.sm,
+    letterSpacing: 1,
+    fontWeight: '600',
+  },
+  codeText: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: COLORS.primary,
+    letterSpacing: 8,
+  },
+  copyButton: {
+    backgroundColor: COLORS.primary + '33',
+    borderRadius: BORDER_RADIUS.md,
+    paddingVertical: SPACING.sm,
+    paddingHorizontal: SPACING.lg,
+    marginTop: SPACING.md,
+    borderWidth: 1,
+    borderColor: COLORS.primary,
+  },
+  copyButtonText: {
+    color: COLORS.primaryLight,
+    fontWeight: 'bold',
+    fontSize: FONT_SIZE.sm,
+  },
+  sectionTitle: {
+    fontSize: FONT_SIZE.lg,
+    fontWeight: 'bold',
+    color: COLORS.text,
+    marginBottom: SPACING.md,
+  },
+  playerSlot: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: COLORS.surface,
+    borderRadius: BORDER_RADIUS.md,
+    padding: SPACING.md,
+    marginBottom: SPACING.sm,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    gap: SPACING.md,
+  },
+  emptySlot: {
+    borderStyle: 'dashed',
+    borderColor: COLORS.border,
+    backgroundColor: 'transparent',
+  },
+  playerAvatar: {
+    width: 44,
+    height: 44,
+    borderRadius: BORDER_RADIUS.full,
+    backgroundColor: COLORS.primary + '33',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  playerAvatarText: {
+    fontSize: 22,
+  },
+  emptyAvatar: {
+    backgroundColor: COLORS.surfaceLight,
+  },
+  playerInfo: {
+    flex: 1,
+  },
+  playerName: {
+    fontSize: FONT_SIZE.md,
+    fontWeight: 'bold',
+    color: COLORS.text,
+  },
+  playerRole: {
+    fontSize: FONT_SIZE.xs,
+    color: COLORS.textSecondary,
+    marginTop: 2,
+  },
+  emptyName: {
+    fontSize: FONT_SIZE.md,
+    color: COLORS.textMuted,
+    fontStyle: 'italic',
+  },
+  hostBadge: {
+    backgroundColor: COLORS.warning + '33',
+    borderRadius: BORDER_RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 2,
+    borderWidth: 1,
+    borderColor: COLORS.warning,
+  },
+  hostBadgeText: {
+    color: COLORS.warning,
+    fontSize: FONT_SIZE.xs,
+    fontWeight: 'bold',
+  },
+  readyBadge: {
+    backgroundColor: COLORS.success + '33',
+    borderRadius: BORDER_RADIUS.full,
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 2,
+    borderWidth: 1,
+    borderColor: COLORS.success,
+  },
+  readyBadgeText: {
+    color: COLORS.success,
+    fontSize: FONT_SIZE.xs,
+    fontWeight: 'bold',
+  },
+  waitingText: {
+    fontSize: FONT_SIZE.sm,
+    color: COLORS.textSecondary,
+    textAlign: 'center',
+    marginTop: SPACING.md,
+  },
+  startButton: {
+    backgroundColor: COLORS.success,
+    borderRadius: BORDER_RADIUS.lg,
+    padding: SPACING.md,
+    alignItems: 'center',
+    marginTop: SPACING.lg,
+  },
+  startButtonDisabled: {
+    backgroundColor: COLORS.border,
+  },
+  startButtonText: {
+    color: COLORS.text,
+    fontSize: FONT_SIZE.md,
+    fontWeight: 'bold',
+  },
+  leaveButton: {
+    borderRadius: BORDER_RADIUS.lg,
+    padding: SPACING.md,
+    alignItems: 'center',
+    marginTop: SPACING.sm,
+    borderWidth: 1,
+    borderColor: COLORS.danger,
+  },
+  leaveButtonText: {
+    color: COLORS.danger,
+    fontSize: FONT_SIZE.md,
+    fontWeight: 'bold',
+  },
+  playerCount: {
+    fontSize: FONT_SIZE.sm,
+    color: COLORS.textSecondary,
+    textAlign: 'center',
+    marginBottom: SPACING.md,
+  },
+});

@@ -1,0 +1,252 @@
+import { StyleSheet } from 'react-native';
+import { COLORS, SPACING, FONT_SIZE, BORDER_RADIUS } from '../../constants';
+
+export default StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+  },
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: SPACING.md,
+    paddingTop: SPACING.xxl + 10,
+    paddingBottom: SPACING.md,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.border,
+  },
+  vaultInfo: {
+    flex: 1,
+  },
+  vaultTitle: {
+    fontSize: FONT_SIZE.lg,
+    fontWeight: 'bold',
+    color: COLORS.text,
+  },
+  vaultTopic: {
+    fontSize: FONT_SIZE.xs,
+    color: COLORS.textSecondary,
+    marginTop: 2,
+  },
+  timerContainer: {
+    alignItems: 'center',
+    backgroundColor: COLORS.surface,
+    borderRadius: BORDER_RADIUS.md,
+    padding: SPACING.sm,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    minWidth: 80,
+  },
+  timerText: {
+    fontSize: FONT_SIZE.xl,
+    fontWeight: 'bold',
+    color: COLORS.warning,
+  },
+  timerLabel: {
+    fontSize: FONT_SIZE.xs,
+    color: COLORS.textSecondary,
+  },
+  timerDanger: {
+    color: COLORS.danger,
+  },
+  crewRow: {
+    flexDirection: 'row',
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.sm,
+    gap: SPACING.sm,
+    borderBottomWidth: 1,
+    borderBottomColor: COLORS.border,
+  },
+  crewMember: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  crewAvatar: {
+    width: 36,
+    height: 36,
+    borderRadius: BORDER_RADIUS.full,
+    backgroundColor: COLORS.surface,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 2,
+    borderColor: COLORS.border,
+  },
+  crewAvatarDone: {
+    borderColor: COLORS.success,
+  },
+  crewAvatarActive: {
+    borderColor: COLORS.primary,
+  },
+  crewAvatarText: {
+    fontSize: 18,
+  },
+  crewName: {
+    fontSize: 10,
+    color: COLORS.textSecondary,
+    marginTop: 2,
+  },
+  crewStatus: {
+    fontSize: 10,
+    color: COLORS.success,
+    fontWeight: 'bold',
+  },
+  puzzleContainer: {
+    flex: 1,
+    paddingHorizontal: SPACING.md,
+    paddingTop: SPACING.md,
+  },
+  roleTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACING.xs,
+    marginBottom: SPACING.md,
+  },
+  roleTagText: {
+    fontSize: FONT_SIZE.sm,
+    fontWeight: 'bold',
+    color: COLORS.primaryLight,
+    backgroundColor: COLORS.primary + '33',
+    paddingHorizontal: SPACING.sm,
+    paddingVertical: 4,
+    borderRadius: BORDER_RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.primary,
+  },
+  puzzleCard: {
+    backgroundColor: COLORS.surface,
+    borderRadius: BORDER_RADIUS.lg,
+    padding: SPACING.lg,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    marginBottom: SPACING.md,
+  },
+  puzzleQuestion: {
+    fontSize: FONT_SIZE.md,
+    color: COLORS.text,
+    lineHeight: 24,
+    marginBottom: SPACING.md,
+  },
+  codeBlock: {
+    backgroundColor: '#0D1117',
+    borderRadius: BORDER_RADIUS.md,
+    padding: SPACING.md,
+    marginBottom: SPACING.md,
+    borderWidth: 1,
+    borderColor: '#30363D',
+  },
+  codeText: {
+    fontSize: 13,
+    color: '#79C0FF',
+    fontFamily: 'monospace',
+    lineHeight: 20,
+  },
+  optionsContainer: {
+    gap: SPACING.sm,
+  },
+  option: {
+    backgroundColor: COLORS.surfaceLight,
+    borderRadius: BORDER_RADIUS.md,
+    padding: SPACING.md,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: SPACING.md,
+  },
+  optionSelected: {
+    borderColor: COLORS.primary,
+    backgroundColor: COLORS.primary + '22',
+  },
+  optionCorrect: {
+    borderColor: COLORS.success,
+    backgroundColor: COLORS.success + '22',
+  },
+  optionWrong: {
+    borderColor: COLORS.danger,
+    backgroundColor: COLORS.danger + '22',
+  },
+  optionLetter: {
+    width: 28,
+    height: 28,
+    borderRadius: BORDER_RADIUS.full,
+    backgroundColor: COLORS.border,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  optionLetterText: {
+    fontSize: FONT_SIZE.sm,
+    fontWeight: 'bold',
+    color: COLORS.text,
+  },
+  optionText: {
+    fontSize: FONT_SIZE.sm,
+    color: COLORS.text,
+    flex: 1,
+  },
+  submitButton: {
+    backgroundColor: COLORS.primary,
+    borderRadius: BORDER_RADIUS.lg,
+    padding: SPACING.md,
+    alignItems: 'center',
+    marginBottom: SPACING.md,
+  },
+  submitButtonText: {
+    color: COLORS.text,
+    fontSize: FONT_SIZE.md,
+    fontWeight: 'bold',
+  },
+  submitButtonDisabled: {
+    backgroundColor: COLORS.border,
+  },
+  hintButton: {
+    borderRadius: BORDER_RADIUS.lg,
+    padding: SPACING.sm,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: COLORS.warning,
+    marginBottom: SPACING.md,
+  },
+  hintButtonText: {
+    color: COLORS.warning,
+    fontSize: FONT_SIZE.sm,
+    fontWeight: 'bold',
+  },
+  hintBox: {
+    backgroundColor: COLORS.warning + '22',
+    borderRadius: BORDER_RADIUS.md,
+    padding: SPACING.md,
+    borderWidth: 1,
+    borderColor: COLORS.warning,
+    marginBottom: SPACING.md,
+  },
+  hintText: {
+    color: COLORS.warning,
+    fontSize: FONT_SIZE.sm,
+  },
+  solvedContainer: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: SPACING.xl,
+  },
+  solvedEmoji: {
+    fontSize: 64,
+    marginBottom: SPACING.md,
+  },
+  solvedTitle: {
+    fontSize: FONT_SIZE.xxl,
+    fontWeight: 'bold',
+    color: COLORS.success,
+    marginBottom: SPACING.sm,
+  },
+  solvedDesc: {
+    fontSize: FONT_SIZE.md,
+    color: COLORS.textSecondary,
+    textAlign: 'center',
+  },
+});
